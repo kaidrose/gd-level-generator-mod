@@ -1,8 +1,6 @@
 name: Build Geode Mod
 
-on:
-  push:
-  workflow_dispatch:
+on: [push]
 
 jobs:
   build:
@@ -11,5 +9,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Build Geode Mod
-        uses: geode-sdk/build-geode-mod@v2
+      - name: Build Mod
+        uses: geode-sdk/build-geode-mod@v1
